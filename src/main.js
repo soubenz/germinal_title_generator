@@ -10,6 +10,10 @@ export default function (Vue, {
   isClient,
   appOptions
 }) {
+  head.link.push({
+    rel: 'stylesheet',
+    href: "https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css"
+  }, )
 
   const opts = {} //opts includes, vuetify themes, icons, etc.
   Vue.use(Vuetify)
