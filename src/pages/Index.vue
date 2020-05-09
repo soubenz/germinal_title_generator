@@ -18,6 +18,9 @@
                 v-model="name"
                 label="Nom"
                 required
+                clearable
+                hint="Exemple: Growth Hacking"
+                persistent-hint
                 :rules="[v => !!v || 'Champ obligatoire']"
               ></v-text-field>
             </v-col>
@@ -25,6 +28,9 @@
               <v-text-field
                 v-model="action"
                 label="Verbe/Action"
+                clearable
+                hint="Exemple: Conduire Son Tracteur"
+                persistent-hint
                 :rules="[v => !!v || 'Champ obligatoire']"
                 required
               ></v-text-field>
