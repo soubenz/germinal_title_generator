@@ -8,6 +8,10 @@
   },
   "dependencies": {
     "gridsome": "^0.7.0",
+    "vue-json-csv": "^1.2.11",
     "vuetify": "^2.2.27"
+  },
+  "devDependencies": {
+    "webpack-node-externals": "^1.7.2"
   }
 }
