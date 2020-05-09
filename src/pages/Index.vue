@@ -46,18 +46,13 @@
             </v-col>
           </v-row>
           <v-row justify="space-between" dense justify-sm="end">
-            <!-- <v-spacer /> -->
-            <!-- <v-col> -->
-            <!-- </v-col> -->
-            <!-- <v-col> -->
-            <v-btn color="primary" @click="clearData">Effacer</v-btn>
-            <v-btn color="success" @click="generate" :disabled="!valid">Generer</v-btn>
-            <!-- </v-col> -->
+            <v-btn color="warning" @click="clearData">Effacer</v-btn>
+            <v-btn color="blue-grey darken-3" dark @click="generate" :disabled="!valid">Generer</v-btn>
           </v-row>
         </v-form>
       </v-card-text>
     </v-card>
-    <!-- {{generated}} -->
+
     <v-card v-if="generated.length != 0" color="blue-grey lighten-5">
       <v-card-title class="subheading font-weight-bold">
         <v-toolbar class="mb-0" color="blue-grey darken-3" dark>
@@ -69,16 +64,13 @@
                 <v-icon>mdi-download</v-icon>
               </json-csv>
             </v-btn>
-            <!-- <v-btn sm="12" color="success">
-             
-            </v-btn>-->
           </v-row>
         </v-toolbar>
       </v-card-title>
       <v-card-subtitle>
         <v-toolbar color="blue-grey darken-1" dark>
           <v-row>
-            <p>{{subtitle}}</p>
+            <p class="ma-2">{{subtitle}}</p>
             <v-spacer />
           </v-row>
         </v-toolbar>
