@@ -32,12 +32,12 @@
             </v-btn>
           </v-card-text>
           <v-card-text class="font-weight-bold">
-            Base sur le travail de: Jordan Chenevier-Truchet
+            Base sur le travail de: Adrien Bono
             <v-btn
               text
               icon
               v-on="on"
-              href="https://www.linkedin.com/in/jordanchenevier/"
+              href=" https://www.linkedin.com/in/adrienbono/"
               target="_blank"
             >
               <v-icon>mdi-linkedin</v-icon>
