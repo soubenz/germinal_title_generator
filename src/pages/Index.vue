@@ -180,7 +180,7 @@ export default {
     },
     generateClickBait() {
       return [
-        "Comment Éviter Les Plus Grosses Erreurs Avec" +
+        "Comment Éviter Les Plus Grosses Erreurs Avec " +
           this.articlesFormat[this.article].defined +
           this.name +
           " ?",
@@ -202,7 +202,8 @@ export default {
         "Raisonnez Comme Les Meilleurs " +
           this.articlesFormat[this.article].contracted +
           this.name,
-        "La Technique Pour this.action" +
+        "La Technique Pour " +
+          this.action +
           " En 2020. (Ce N'Est PAS Ce Que Vous Pensez !)	"
       ];
     },
