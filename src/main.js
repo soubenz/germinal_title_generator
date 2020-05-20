@@ -25,9 +25,8 @@ export default function (Vue, {
     config: {
       id: process.env.TRACKING_ID,
 
-    },
-    router
-  });
+    }
+  }, router);
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
