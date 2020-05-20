@@ -23,7 +23,7 @@ export default function (Vue, {
   appOptions.vuetify = new Vuetify(opts);
   Vue.use(VueGtag, {
     config: {
-      id: process.env.TRACKING_ID,
+      id: "UA-167204105-1",
 
     }
   }, router);
