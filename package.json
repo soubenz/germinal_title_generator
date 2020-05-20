@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "gridsome": "^0.7.0",
+    "vue-gtag": "^1.6.2",
     "vue-json-csv": "^1.2.11",
     "vuetify": "^2.2.27"
   },

@@ -4,6 +4,8 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
+import VueGtag from "vue-gtag";
+
 export default function (Vue, {
   router,
   head,
@@ -19,6 +21,13 @@ export default function (Vue, {
   Vue.use(Vuetify)
 
   appOptions.vuetify = new Vuetify(opts);
+  Vue.use(VueGtag, {
+    config: {
+      id: process.env.TRACKING_ID,
+
+    },
+    router
+  });
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
